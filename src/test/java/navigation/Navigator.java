@@ -1,7 +1,6 @@
-package Navigation;
+package navigation;
 
 import org.openqa.selenium.WebDriver;
-import pages.BasePage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.SignUpPage;

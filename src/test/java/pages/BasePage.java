@@ -1,10 +1,9 @@
 package pages;
 
-import base.DriverFactory;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import wrappers.Browser;
 
 import java.time.Duration;
 
@@ -25,5 +24,9 @@ public abstract class BasePage {
         catch (Exception e) {
             return false;
         }
+    }
+
+    protected Browser browser() {
+        return new Browser(driver);
     }
 }
